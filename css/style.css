@@ -1,0 +1,246 @@
+@font-face {
+    font-family: 'bold-qwe';
+    src: url(../fonts/pt-sans-caption-bold.woff);
+}
+@font-face {
+    font-family: 'bold-qwe2';
+    src: url(../fonts/pt-sans-caption-bold.woff2);
+}
+@font-face {
+    font-family: 'regular-woff1';
+    src: url(../fonts/pt-sans-caption-regular.woff);
+}
+@font-face {
+    font-family: 'regular-woff2';
+    src: url(../fonts/pt-sans-caption-regular.woff2);
+}
+
+
+
+
+body {
+    background-image: url(../img/sliced-orange-fruit-drawing.jpg);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: regular-woff2, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+
+main {
+
+    margin: 0 auto;
+    max-width: 400px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.h2-container {
+    position: relative;
+    height: 20px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+.h2-container h2 {
+    position: absolute;
+    left: -5px;
+    top: -20px;
+}
+
+.form_toggle {
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 1px;
+    padding-left: 30px;
+    border: #fb7b36;
+}
+
+.form_toggle-item {
+    float: left;
+    display: inline-block;
+    border-right: 1px solid #fb7b36;
+}
+
+.form_toggle-item input[type=radio] {
+    display: none;
+    border: #fb7b36;
+}
+
+.form_toggle-item label {
+    display: inline-block;
+    padding: 0px 15px;
+    line-height: 34px;
+    border: 2px solid #fb7b36;
+    border-right: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+.form_toggle .item-1 label {
+    border-radius: 5px 0 0 5px;
+    border-right: none;
+}
+
+.form_toggle .item-2 label {
+    border-radius: 0 5px 5px 0;
+    border-right: 1px solid #999;
+}
+
+.form_toggle .item-1 input[type=radio]:checked + label {
+    background: #fb7b36;
+    color: white;
+}
+
+.form_toggle .item-2 input[type=radio]:checked + label {
+    background: #fb7b36;
+    color: white;
+}
+
+.form_radio_btn {
+    display: inline-block;
+    position: relative;
+    left: -12px;
+    margin-bottom: 20px;
+}
+
+.form_radio_btn input[type=radio] {
+    display: none;
+}
+
+.form_radio_btn label {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0px 15px;
+    line-height: 34px;
+    width: 130px;
+    border: 1px solid #999;
+    border-radius: 3px;
+    user-select: none;
+    text-align: center;
+
+}
+
+
+.form_radio_btn input[type=radio]:checked + label {
+    background: rgb(254, 124, 52);
+    color: #ffffff;
+}
+
+
+.form_radio_btn label:hover {
+    background: rgb(241, 181, 148);
+}
+
+
+.form_radio_btn input[type=radio]:disabled + label {
+    background: #efefef;
+    color: #666;
+}
+
+.Physical_parameters {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: none;
+    padding: 10;
+    margin-top: 25px;
+}
+
+.param-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin: 0 15px;
+
+}
+
+.param-container:first-child,
+.param-container:last-child {
+    flex: 0;
+}
+
+.Physical_parameters label {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.Physical_parameters span {
+    color: #666;
+    font-size: 15px;
+}
+.Physical_parameters input{
+    height: 30px;
+    width: 80px;
+}
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+legend {
+    display: none;
+}
+section {
+    display: none;
+}
+::placeholder {
+    text-align: center;
+}
+input {
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 5px ;
+}
+
+
+.Physical_active label {
+    font-size: 18px;
+}
+.Physical_active p {
+    font-size: 15px;
+    color: rgb(139, 123, 123);
+}
+.Physical_active input[type="radio"]:checked + label {
+    color: rgb(254, 124, 52);
+}
+
+button {
+    border: none;
+    border-radius: 3px;
+}
+.submit{
+    color: white;
+    background:  rgb(220,220,220);
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 10px 5px 10px 5px;
+
+}
+
+.Physical_active {
+    padding-left: 25px;
+    padding-bottom: 30px;
+}
+.pol {
+    margin-left: 25px;
+    /* костыль я знаю я устал босс уже 4 утра */
+    /* фил, почему это скрин а не макет на фигме ;(  */
+}
+p {
+    margin: 1px;
+    margin-left: 18px;
+
+}
+/* бразильский фонк имба */
